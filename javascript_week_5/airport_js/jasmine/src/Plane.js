@@ -3,7 +3,7 @@ function Plane() {
 }
 
 Plane.prototype.land = function(airport) {
-  this.planes.push(airport)
+  airport.clearForLanding(this);
 };
 
 Plane.prototype.takeOff = function(airport) {
